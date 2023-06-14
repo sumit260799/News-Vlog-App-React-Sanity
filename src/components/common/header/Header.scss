@@ -1,0 +1,70 @@
+.head {
+  cursor: pointer;
+}
+.head .logo img {
+  width: 500px;
+}
+header {
+  background-color: #000000;
+  color: #fff;
+  z-index: 20;
+}
+header li {
+  margin-right: 0px;
+  transition: 0.5s;
+}
+header li:hover {
+  color: crimson;
+  cursor: pointer;
+}
+header a {
+  color: #fff;
+}
+.barIcon {
+  font-size: 25px;
+  background: none;
+  color: #fff;
+  display: none;
+  border: none;
+}
+@media screen and (max-width: 650px) {
+  .head .ad {
+    display: none;
+  }
+  header .icon {
+    display: none;
+  }
+  header .flex {
+    display: none;
+  }
+  .barIcon {
+    display: block;
+  }
+  header .navbar {
+    position: absolute;
+    display: block;
+    background-color: #000000;
+    left: 0;
+    top: 20%;
+    transition: 0.5s;
+    width: 100%;
+
+    height: 28vh;
+    z-index: 5;
+    padding-left: 30px;
+    padding: 1rem;
+  }
+  header .navbar {
+    // display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    // flex-direction: column;
+    margin-bottom: 0px;
+  }
+  header ul li {
+    margin-bottom: 0px;
+    padding-left: 1rem;
+  }
+}

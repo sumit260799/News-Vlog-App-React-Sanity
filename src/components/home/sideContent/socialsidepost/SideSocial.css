@@ -1,0 +1,44 @@
+.spost .box {
+  margin-bottom: 20px;
+}
+.spost .img {
+  width: 100px;
+  height: 80px;
+}
+.spost img {
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+}
+.spost .text {
+  padding: 0 15px;
+}
+.spost h1 {
+  font-size: 15px;
+}
+.spost span {
+  font-size: 12px;
+  color: grey;
+}
+@media screen and (max-width: 768px) {
+  .spost .img,
+  .spost img {
+    width: 100px;
+    height: 80px;
+  }
+  .spost .text {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 950px) and (max-width: 1150px) {
+  .spost {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 563px) and (max-width: 950px) {
+  .spost {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

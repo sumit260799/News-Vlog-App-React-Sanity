@@ -1,0 +1,104 @@
+.social .box {
+  margin-bottom: 30px;
+  margin-left: 2px;
+}
+.social .text {
+  padding: 0 30px;
+  color: rgba(0, 0, 0, 0.87);
+}
+.social .images {
+  width: 320px;
+  height: 220px;
+}
+.social img {
+  width: 320px;
+  height: 220px;
+  object-fit: cover;
+}
+.date2 {
+  margin-left: 1.5rem;
+}
+.social h1 {
+  font-size: 22px;
+}
+@media screen and (max-width: 768px) {
+  .social img,
+  .social .images {
+    height: 120px;
+    width: 140px;
+  }
+  .desc {
+    display: none;
+  }
+  .social .box {
+    margin-bottom: 15px;
+    margin-left: 2px;
+  }
+  .social h1 {
+    font-size: 14px;
+  }
+  .social .text {
+    padding: 0 10px;
+    color: rgba(0, 0, 0, 0.87);
+  }
+  .icons {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.6rem;
+    margin-top: 1.5rem;
+  }
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 5px;
+  font-size: 0.8rem;
+  margin-top: 1.5rem;
+  color: rgba(0, 0, 0, 0.805);
+}
+.peopleicon {
+  color: rgb(190, 36, 36);
+  margin-right: 5px;
+  font-size: 1rem;
+}
+.peopleicon:nth-child(2) {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 550px) and (max-width: 768px) {
+  .social img,
+  .social .images {
+    height: 150px;
+    width: 200px;
+  }
+  .icons {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8rem;
+    margin-top: 1.5rem;
+  }
+  .social h1 {
+    font-size: 20px;
+  }
+  .social .text {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 378px) {
+  .social img,
+  .social .images {
+    height: 110px;
+    width: 110px;
+  }
+  .peopleicon:nth-child(2) {
+    margin-left: 2px;
+  }
+  .icons {
+    font-size: 0.5rem;
+    margin-top: 1rem;
+  }
+}

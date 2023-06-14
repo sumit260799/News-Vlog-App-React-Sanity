@@ -1,0 +1,36 @@
+.main .container {
+  display: flex;
+  justify-content: space-between;
+}
+.mainContent {
+  width: 75%;
+}
+.sideContent {
+  width: 23%;
+}
+.sideContent .heading h6 {
+  background-color: #000;
+}
+@media screen and (max-width: 1150px) {
+  .main .container {
+    flex-direction: column;
+  }
+  .mainContent {
+    width: 100%;
+  }
+  .sideContent {
+    width: 100%;
+  }
+}
+
+/* @media screen and (min-width: 768px) and (max-width: 1150px) {
+  main .container {
+    flex-direction: column;
+  }
+  .mainContent {
+    width: 100%;
+  }
+  .sideContent {
+    width: 100%;
+  }
+} */
