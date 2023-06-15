@@ -7,6 +7,7 @@ import SinglePage from "./components/singlePage/SinglePage";
 import PopularPage from "./components/home/mainContent/popular/PopularPage";
 import SingleFood from "./components/home/mainContent/FoodPost/SingleFood";
 import SingleSocial from "./components/home/mainContent/social/SingleSocial";
+import Contact from "./components/home/mainContent/contact/Contact";
 import "./App.css";
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/PopularPage/:id" exact element={<PopularPage />} />
         <Route path="/SingleFood/:id" exact element={<SingleFood />} />
         <Route path="/SingleSocial/:id" exact element={<SingleSocial />} />
+        <Route path="/contact" exact element={<Contact />} />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -66,6 +66,7 @@ function Popular() {
           slidesToShow: 1,
           slidesToScroll: 1,
           rows: 3,
+          dots: true,
         },
       },
     ],

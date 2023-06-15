@@ -43,6 +43,7 @@ function FoodPost() {
           slidesToShow: 2,
           slidesToScroll: 2,
           rows: 1,
+          dots: true,
         },
       },
     ],
