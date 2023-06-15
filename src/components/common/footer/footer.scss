@@ -5,13 +5,13 @@ footer {
   margin-top: 50px;
 }
 
-ul {
+.container .box ul {
   display: flex;
   flex-direction: row;
-  column-gap: 40px;
+  column-gap: 20px;
 }
-ul li a {
-  color: #fff;
+.box ul li a {
+  color: #ffffff;
 }
 
 .legal {

@@ -16,7 +16,7 @@ function SideSocial() {
     <>
       <Heading title="Social post" />
       <section className="spost">
-        {items.slice(0, 5).map((val) => {
+        {items.map((val) => {
           const { _id, title, socialImage, date } = val;
           return (
             <Link key={_id} to={`/SingleSocial/${_id}`}>

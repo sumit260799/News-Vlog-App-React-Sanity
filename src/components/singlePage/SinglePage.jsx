@@ -48,8 +48,8 @@ function SinglePage() {
           /* console.log(item); */
         }
         return (
-          <main>
-            <div key={item._id} className="container">
+          <main key={item._id}>
+            <div className="container">
               <section className="mainContent details">
                 <h1 className="title">{item.title}</h1>
 

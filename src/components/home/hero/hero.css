@@ -119,7 +119,7 @@
   .hero .container {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(24, 6vh);
+    grid-template-rows: repeat(20, 6vh);
     grid-gap: 10px;
   }
   .hero .box:nth-child(1) {
@@ -130,35 +130,60 @@
   }
   .hero .box:nth-child(2) {
     grid-column-start: 1;
-    grid-column-end: 9;
+    grid-column-end: 5;
     grid-row-start: 5;
     grid-row-end: 9;
   }
   .hero .box:nth-child(3) {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    grid-row-end: 9;
+  }
+  .hero .box:nth-child(4) {
     grid-column-start: 1;
     grid-column-end: 9;
     grid-row-start: 9;
     grid-row-end: 13;
   }
-  .hero .box:nth-child(4) {
+  .hero .box:nth-child(5) {
     grid-column-start: 1;
     grid-column-end: 9;
     grid-row-start: 13;
     grid-row-end: 17;
   }
-  .hero .box:nth-child(5) {
+  .hero .box:nth-child(6) {
     grid-column-start: 1;
     grid-column-end: 9;
     grid-row-start: 17;
     grid-row-end: 21;
   }
-  .hero .box:nth-child(6) {
-    grid-column-start: 1;
-    grid-column-end: 9;
-    grid-row-start: 21;
-    grid-row-end: 25;
-  }
   .hero .box:nth-child(1) h1 {
     font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .hero .container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(20, 6vh);
+  }
+  .hero {
+    margin: 10px 0;
+  }
+  .hero a {
+    color: #ffffff;
+  }
+  .hero .box {
+    position: relative;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+  }
+  .hero .text h1 {
+    font-weight: 400;
+    margin: 22px 0;
+    font-size: 12px;
   }
 }

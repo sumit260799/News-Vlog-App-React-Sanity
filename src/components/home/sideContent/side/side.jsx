@@ -16,13 +16,6 @@ function Side() {
         />
       </section>
       <SideSocial />
-      <section className="banner">
-        <img
-          className="advertisement"
-          src="https://penji.co/wp-content/uploads/2019/04/McDonalds-food-poster-design.jpg"
-          alt=""
-        />
-      </section>
     </>
   );
 }

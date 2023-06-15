@@ -15,7 +15,7 @@ function Discover() {
   return (
     <div>
       <section className="discover">
-        <div className="container">
+        <div className="container2">
           <Heading title="Discover" />
           <div className="content">
             {discover.map((val) => {

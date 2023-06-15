@@ -3,7 +3,10 @@
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 30px;
 }
-
+.container2 {
+  width: 90%;
+  margin: auto;
+}
 .discover .box {
   background-color: #fff;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);

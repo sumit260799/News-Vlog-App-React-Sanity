@@ -4,19 +4,18 @@
 .head .logo img {
   width: 500px;
 }
+
 header {
   background-color: #000000;
   color: #fff;
   z-index: 20;
 }
 header li {
-  margin-right: 0px;
+  margin-right: 12px;
   transition: 0.5s;
+  padding: 13px 10px;
 }
-header li:hover {
-  color: crimson;
-  cursor: pointer;
-}
+
 header a {
   color: #fff;
 }
@@ -27,7 +26,15 @@ header a {
   display: none;
   border: none;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 769px) {
+  .active {
+    background-color: none;
+    text-decoration: underline;
+  }
+
+  nav {
+    padding: 0.5rem 0;
+  }
   .head .ad {
     display: none;
   }
@@ -39,6 +46,8 @@ header a {
   }
   .barIcon {
     display: block;
+    padding-top: 0.2rem;
+    padding-left: 0.5rem;
   }
   header .navbar {
     position: absolute;
@@ -49,22 +58,40 @@ header a {
     transition: 0.5s;
     width: 100%;
 
-    height: 28vh;
+    height: 25vh;
     z-index: 5;
     padding-left: 30px;
     padding: 1rem;
   }
   header .navbar {
-    // display: flex;
     display: grid;
+    // display: inline-block;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
+    justify-self: center;
     align-items: center;
-    // flex-direction: column;
+    flex-direction: column;
     margin-bottom: 0px;
   }
   header ul li {
     margin-bottom: 0px;
     padding-left: 1rem;
+    // display: grid;
+    // justify-self: start;
+    // align-items: center;
+  }
+  header li {
+    padding: 0px 0px;
+  }
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+@media screen and (min-width: 769px) {
+  .active {
+    background-color: #948e8e;
+    color: #fff;
   }
 }
